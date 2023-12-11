@@ -4,8 +4,8 @@ services:
     image: mysql:5.7
     container_name: svc-mysql
     restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: rootPasswd123-
+    env_file:
+      - mysql.env
     ports:
       - "6033:3306"
     volumes:
