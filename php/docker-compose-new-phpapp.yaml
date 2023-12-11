@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: new-phpapp
+    volumes:
+      - ./projects/new-phpapp:/var/www/html
+    ports:
+      - "7001:80"
