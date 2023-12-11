@@ -10,7 +10,7 @@ php-mysql-project-docker                            #
     ├── mysql                                       # root folder for database
     │   ├── docker-compose.yaml                     # docker compose for database
     │   ├── mysql-data                              # mount folder for database to make it persistence
-    │   └── mysql.env.example                       # mysql config to set root password
+    │   └── mysql.env.example                       # mysql config example to set root password, you can copy and replace with new password
     └── php                                         # php folder for database
         ├── Dockerfile                              # apache2 dockerfile
         ├── docker-compose-crud-php-simple.yaml     # docker compose for project crud-php-simple
