@@ -6,8 +6,6 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootPasswd123-
-      MYSQL_USER: app
-      MYSQL_PASSWORD: appPasswd123-
     ports:
       - "6033:3306"
     volumes:
