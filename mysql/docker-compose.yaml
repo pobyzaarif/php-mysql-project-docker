@@ -1,0 +1,25 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: svc-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootPasswd123-
+      MYSQL_USER: app
+      MYSQL_PASSWORD: appPasswd123-
+    ports:
+      - "6033:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin:5.2.1
+    container_name: svc-phpmyadmin
+    restart: always
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=svc-mysql
+      - PMA_PORT=6033
+      - UPLOAD_LIMIT=100000K
+    ports:
+      - "7777:80"
