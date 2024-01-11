@@ -3,7 +3,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile-crud-php-simple-example
     container_name: crud-php-simple-app
     volumes:
       - ./projects/crud-php-simple:/var/www/html
