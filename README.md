@@ -6,14 +6,14 @@ This is only my research, I just want to set up my server that's a bunch of PHP 
 
 ## Project Structure
 ```
-php-mysql-project-docker                            #
-    ├── mysql                                       # root folder for database
-    │   ├── docker-compose.yaml                     # docker compose for database
-    │   ├── mysql-data                              # mount folder for database to make it persistence
-    │   └── mysql.env.example                       # mysql config example to set root password, you can copy and replace with new password
-    └── php                                         # php folder for database
-        ├── Dockerfile                              # apache2 dockerfile
-        ├── docker-compose-crud-php-simple.yaml     # docker compose for project crud-php-simple
-        └── projects                                # php project folder, so all php's project will put here
-            └── crud-php-simple                     # sample project crud-php-simple root folder (clone/pull from here https://github.com/pobyzaarif/crud-php-simple)
+php-mysql-project-docker                                    #
+    ├── mysql                                               # root folder for database
+    │   ├── docker-compose.yaml                             # docker compose for database
+    │   ├── mysql-data                                      # mount folder for database to make it persistence
+    │   └── mysql.env.example                               # mysql config example to set root password, you can copy and replace with new password
+    └── php                                                 # php folder for database
+        ├── Dockerfile                                      # apache2 dockerfile
+        ├── docker-compose-crud-php-simple-example.yaml     # docker compose for project crud-php-simple
+        └── projects                                        # php project folder, so all php's project will put here
+            └── crud-php-simple                             # sample project crud-php-simple root folder (clone/pull from here https://github.com/pobyzaarif/crud-php-simple)
 ```
